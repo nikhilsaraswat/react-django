@@ -1,10 +1,22 @@
-// UseEffect Hook
+// use Reducer
 import './App.css';
-import {useEffect, useState} from 'react'
+import {useReducer} from 'react'
 
 
 function AppFour(){
-    return
+    const [checked, toggle] = useReducer((    // toggle is an reducer function, it will take two argument intial state and function.
+        checked => !checked),
+        false)
+
+    return (
+        <>
+        
+        <input type="checkbox" 
+        value={checked} 
+        onChange={toggle}/>
+        <p>{checked ? "checked" : "not checked"} </p>
+        </>
+    )
 }
 
 export default AppFour
