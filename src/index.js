@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppThree from './AppThree'
+import AppFour from './AppFour'
 
 // const [,,light] = ["boots","tent","headlamp"] Defraction to match variable in array
 // console.log(light)
@@ -12,7 +12,7 @@ const container = document.getElementById('root');
 
 // Create a root.
 const root = ReactDOM.createRoot(container);
-root.render(<AppThree/>)
+root.render(<AppFour/>)
 // root.render(<AppTwo authorized={false}/>); we use for checking condition by passing authorized parameter
 // ReactDOM.render(
 //   /**<div><App/><AppTwo/></div>,  we can use this, or next line to remove  additional div*/
